@@ -2,7 +2,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const db = require("./config/mongoose");
-var port = 3000;
+const port = process.env.PORT || 3001
 
 // initializing express
 const app = express();
@@ -13,8 +13,5 @@ app.use("/products", require("./routes/products"));
 
 // starting the server
 app.listen(port, function () {
-  console.log("API is deployed on port", port);
-  console.log(
-    "Kindly open http://localhost:" + port + "/products in any browser."
-  );
+  console.log("API is deployed");
 });
