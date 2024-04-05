@@ -1,8 +1,8 @@
 {
   "name": "ecommerce-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "simple ecommerce api project",
+  "description": "simple api app",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
